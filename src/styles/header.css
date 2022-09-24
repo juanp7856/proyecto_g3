@@ -1,0 +1,63 @@
+.logo {
+    height:80px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    padding: 14px 0;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color:beige;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-links li a::after{
+    content:" ";
+    background: beige;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+.btn-header {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 12px 0px;
+    width: 30px;
+}
+
+.nav-icons {
+    padding:8px;
+    margin-right:20px;
+}
+.nav-icons li {
+    display: inline-block;
+}
+
+.nav-icons li button i{
+    height:100px;
+    width:80px;
+}
