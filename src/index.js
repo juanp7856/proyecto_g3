@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Historia1 from './pages/Historia1';
+import Historia10 from './pages/Historia10';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Historia1 />
+    <Historia10 />
   </React.StrictMode>
 );
 

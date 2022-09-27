@@ -45,8 +45,8 @@ nav {
     background-color: transparent;
     border: none;
     color: white;
-    padding: 12px 0px;
-    width: 30px;
+    padding: 12px 20px;
+    font-size: 25px;
 }
 
 .nav-icons {
