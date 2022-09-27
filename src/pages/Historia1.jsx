@@ -5,31 +5,33 @@ import "bootstrap/dist/css/bootstrap.css"
 const Historia1 = () => {
     return <div classNameName="bg-dark">
         <Header />
+        <div className="bg-success container" style={{ width: "400px", paddingtop: "10px" }}>
 
-        <form className="bg-success container" style={{ width: "350px", paddingtop: "10px" }}>
-
-            <div className="fst-italic text-white h6 ">CREATE ACCOUNT</div>
-            <div className="mb-3">
-                <input type="text" className="text-white bg-success form-control" id="exampleInputEmail1" placeholder="First Name" > </input>
-            </div>
+            <label className="form-label fst-italic text-white h5 " >CREATE ACCOUNT </label>
 
             <div className="mb-3">
-                <input type="text" className="bg-success form-control" id="exampleInputEmail1" placeholder="Last Name"> </input>
+                <input type="text" className="form-control" placeholder="First Name"></input>
             </div>
-
             <div className="mb-3">
-                <input type="email" className="bg-success form-control" id="exampleInputEmail1" placeholder="Email"> </input>
+                <input type="text" className="form-control" placeholder="Last Name"></input>
             </div>
-
             <div className="mb-3">
-                <input type="password" className="bg-success form-control" id="exampleInputEmail1" placeholder="Password"> </input>
+                <input type="email" className="form-control" placeholder="Email"></input>
+            </div>
+            <div className="mb-3">
+                <input type="password" className="form-control" placeholder="Password"></input>
             </div>
 
-            <div className="d-grid gap-2" style="padding-bottom:15px;">
+            <div className="d-grid gap-2" style={{paddingbottom:"15px"}}>
                 <button className="rounded border-0 btn-primary font-monospace h6 fs-6" style={{ padding: "5px" }} type="button">CREATE</button>
             </div>
-        </form>
+
+        </div>
+
+
+
     </div>
+
 }
 
 export default Historia1
