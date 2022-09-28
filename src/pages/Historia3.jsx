@@ -19,8 +19,8 @@ const Historia3 = () => {
                 Just for what you need
             </div>
             <div style={{marginTop:"2%"}}>
-                <button type="button" className="btn btn-danger">Build for begginers</button>
-                <button type="button" className="btn btn-danger" style={{marginLeft:"1%"}}>Advance building</button>
+                <button type="button" className="both3 btn btn-danger border-0">Build for begginers</button>
+                <button type="button" className="both3 btn btn-danger border-0" style={{marginLeft:"1%"}}>Advance building</button>
             </div>
         </div>
         
