@@ -1,14 +1,13 @@
 import React from "react"
 import Header from "../components/Header"
 import "bootstrap/dist/css/bootstrap.css"
-import Values from "values.js"
 
 const Historia1 = () => {
 
     return <div classNameName="bg-dark">
-        <Header />
+        <Header/>
 
-        <form className="bg-success container" style={{ width: "350px", paddingtop: "10px" }}>
+        <form className="container" style={{ width: "350px", paddingtop: "10px" }}>
 
             <div className="fst-italic text-white h6 ">CREATE ACCOUNT</div>
 
