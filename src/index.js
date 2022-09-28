@@ -6,13 +6,12 @@ import Historia11 from './pages/Historia11';
 import Historia5 from './pages/Historia5';
 import Historia24 from './pages/Historia24';
 import reportWebVitals from './reportWebVitals';
-import Historia2 from './pages/Historia2';
-import Historia3 from './pages/Historia3';
+import Historia17 from './pages/Historia17';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Historia3/>
+    <Historia17/>
   </React.StrictMode>
 );
 
