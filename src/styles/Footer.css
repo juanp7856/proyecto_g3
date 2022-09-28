@@ -1,5 +1,19 @@
 .backimg
 {
     background-image: url('../assets/Footer.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
     
+}
+
+.body
+{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows:auto 1fr auto ;
+}
+
+.both3
+{
+    background-color: rgb(151, 105, 194);
 }
