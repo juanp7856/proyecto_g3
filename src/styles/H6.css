@@ -1,0 +1,36 @@
+table,td,th{border: 2px solid white;}
+
+table{
+    margin: auto;
+    width: auto;
+}
+
+td{padding: 10px;
+    
+    font-size: 19pt;
+    color: white
+}
+
+th{padding: 10px;
+    text-align: center;
+    font-size: 19pt;
+    color: white;
+    
+}
+
+
+
+form{font-size: 16pt;
+    
+    
+    width: auto;
+    
+    
+}
+
+
+#NVI1{display: block;
+  margin: auto;
+  width: 60%;
+  
+}
