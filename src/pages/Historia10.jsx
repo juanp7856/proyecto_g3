@@ -1,7 +1,7 @@
 import React from "react"
 import Header from "../components/Header"
 import "bootstrap/dist/css/bootstrap.css"
-import "../styles/butH10.css"
+import "../styles/H10.css"
 
 const Historia10 = () => {
     return <div className="bg-dark">
