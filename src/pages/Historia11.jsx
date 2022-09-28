@@ -37,7 +37,7 @@ const Historia11 = () => {
         <div className="container">
             <div className="row">
                 <div style={{ width: "30%", float: "left" }}>
-                    <img src={PC} style={{ height: "350px", width: "350px" }}/>
+                    <img src={PC} style={{ height: "350px", width: "350px" }} alt="PCBANNER"/>
                     <div style={{ marginTop: "20px", backgroundColor: "slategrey", width: "350px" }}>
                         <div  className="container" style={{ textAlign: "center" }}>
                             <div className="row">
@@ -61,7 +61,7 @@ const Historia11 = () => {
                             <div className="col mt-2">
                                 <div>
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={CPU}/>
+                                        <img className="listaimg" src={CPU} alt="CPU"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">INTEL CORE I7-12700F 12-CORE</p></div>
@@ -73,7 +73,7 @@ const Historia11 = () => {
 
                                 <div className="mt-5">
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={RAM}/>
+                                        <img className="listaimg" src={RAM} alt="RAM"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">16GB DDR4 DUAL CHANNEL</p></div>
@@ -85,7 +85,7 @@ const Historia11 = () => {
 
                                 <div className="mt-5">
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={REFLIQUIDA}/>
+                                        <img className="listaimg" src={REFLIQUIDA} alt="REF LIQUIDA"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">CORSAIR HIDRO SERIES H100I RGB</p></div>
@@ -97,7 +97,7 @@ const Historia11 = () => {
 
                                 <div className="mt-5">
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={PC}/>
+                                        <img className="listaimg" src={PC} alt="CASE"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">NZXT H510</p></div>
@@ -109,7 +109,7 @@ const Historia11 = () => {
 
                                 <div className="mt-5">
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={PLACAMADRE}/>
+                                        <img className="listaimg" src={PLACAMADRE} alt="PLACAMADRE"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">ASUS PRIME B650M-A | INTEL</p></div>
@@ -121,7 +121,7 @@ const Historia11 = () => {
 
                                 <div className="mt-5">
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={WINDOWS}/>
+                                        <img className="listaimg" src={WINDOWS} alt="WINDOWS"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">WINDOWS 11 HOME + USB RECOVERY</p></div>
@@ -133,7 +133,7 @@ const Historia11 = () => {
                             <div className="col mt-2">
                                 <div>
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={GRAFICA}/>
+                                        <img className="listaimg" src={GRAFICA} alt="GRAFICA"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">NVIDIA GEFORCE RTX 3070 8GB</p></div>
@@ -145,7 +145,7 @@ const Historia11 = () => {
 
                                 <div className="mt-5">
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={SSD}/>
+                                        <img className="listaimg" src={SSD} alt="SSD"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">1TB NVME M.2</p></div>
@@ -157,7 +157,7 @@ const Historia11 = () => {
 
                                 <div className="mt-5">
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={VENTILADORES}/>
+                                        <img className="listaimg" src={VENTILADORES} alt="VENTILADORES"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">CORSAIR ICUE QL120 3FAN PACK</p></div>
@@ -169,7 +169,7 @@ const Historia11 = () => {
 
                                 <div className="mt-5">
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={FUENTEPODER}/>
+                                        <img className="listaimg" src={FUENTEPODER} alt="FUENTEPODER"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">700W ATX 80 PLUS GOLD</p></div>
@@ -181,7 +181,7 @@ const Historia11 = () => {
 
                                 <div className="mt-5">
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={ANTENA}/>
+                                        <img className="listaimg" src={ANTENA} alt="ANTENA"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">WIRELESS 802.11C</p></div>
@@ -193,7 +193,7 @@ const Historia11 = () => {
 
                                 <div className="mt-5">
                                     <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={ARMADO}/>
+                                        <img className="listaimg" src={ARMADO} alt="ARMADO"/>
                                     </div>
                                     <div style={{width:"80%", float: "right"}}>
                                         <div style={{width:"80%", float: "left"}}><p className="listatext">ARMADO + TESTING + GARANTÍA</p></div>
