@@ -9,7 +9,7 @@ const Historia3 = () => {
         <MainHeader />
 
         <div style={{ marginLeft: "5%", marginTop: "-3%" }}>
-            <img style={{ height: "350px", width: "450px" }} src={logo} class="logo" />
+            <img style={{ height: "350px", width: "450px" }} src={logo} class="logo" alt="logo"/>
         </div>
         <div className="text-white" style={{ marginLeft: "7%", marginTop: "1%" }}>
             <h1 className="text-white" style={{marginTop:"2%"}}>
