@@ -7,33 +7,42 @@ const Footer = () => {
     return <div style={{ paddingTop: "20px" }}>
 
         <footer className="backimg text-white py-4" >
-            <div style={{ marginLeft: "2%" }} >
-                <div className="row row-cols-1 text-white gx-3 gy-3" style={{ paddingBottom: "10px" }} >
-                    <div className="col-6 h4 d-flex " > Sign up to our newsletter for the latest PC news.</div>
-                    <div className="col-2 fs-6 d-flex " >Build your PC</div>
-                    <div className="col-2 fs-6 d-flex ">Goods</div>
-                    <div className="col-2 fs-6 d-flex ">Terms & Conditions</div>
+
+            <div className="container" style={{ marginLeft: "2%" }} >
+                <div className="row ">
+                    <div className="col-6"> Sign up to our newsletter for the latest PC news.</div>
+                    <div className="col-2">Build your PC</div>
+                    <div className="col-2">Good.</div>
+                    <div className="col-2">Terms & Conditions</div>
+
                 </div>
 
-                <div className="row row-cols-1 text-white gx-3 gy-3" >
+                <div className="row" style={{ paddingTop: "2%" }}>
+                    <div className="col-3"> <input type="text" className="text-white rounded-1 form-control bg-transparent" style={{ width: "320px", padding: "7.5px" }} placeholder="Email" ></input></div>
+                    <div className="col-3"> <button type="button" className="both3 btn btn-danger border-0" style={{ padding: "8.5px", width: "140px" }}>SUBSCRIBE</button></div>
+                    <div className="col">Why Redux</div>
+                    <div className="col">Better.</div>
+                    <div className="col">Privacy Policy</div>
+                </div>
 
-                    <div className="col-6 h4 d-flex" >
-                        <div className="col-3" >
-                            <input type="text" className="text-white rounded-1 form-control bg-transparent" style={{ width: "200px", padding: "5.5px" }} placeholder="Email" ></input>
-                        </div>
-                        <div className="col-4">
-                            <button type="button" className="both3 btn btn-danger border-0" style={{ padding: "6.5px", width: "140px" }}>SUBSCRIBE</button>
-                        </div>
-                    </div>
+                <div className="row" style={{ paddingTop: "0.8%" }}>
+                    <div className="col-6"> </div>
+                    <div className="col-2">Support</div>
+                    <div className="col-2">Best</div>
+                    <div className="col-2">Refund Policy</div>
 
+                </div>
+
+                <div className="row" >
+                    <div className="col-1"><span id="boot-icon" className="bi bi-facebook" style={{ fontSize: "40px", color: "rgb(255, 255, 255)" }}></span></div>
+                    <div className="col-1"><span id="boot-icon" className="bi bi-twitter" style={{ fontSize: "40px", color: "rgb(255, 255, 255)" }}></span></div>
+                    <div className="col-1"><span id="boot-icon" className="bi bi-instagram" style={{ fontSize: "40px", color: "rgb(255, 255, 255)" }}></span></div>
                 </div>
 
             </div>
-
-
-
-
-
+            <div className="row d-flex aligns-items-center justify-content-center">
+                Copyright © 2022 Build Redux. All Rights Reserved.
+            </div>
         </footer>
     </div>
 
