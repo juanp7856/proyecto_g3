@@ -1,5 +1,21 @@
 table,td,th{border: 2px solid white;}
 
+h1{
+    font-size: 40pt;
+    color: white;
+}
+
+
+h2{
+    font-size: 15pt;
+    color: white;
+}
+
+h3{
+    font-size: 10pt;
+    color: white;
+}
+
 table{
     margin: auto;
     width: auto;
@@ -20,17 +36,23 @@ th{padding: 10px;
 
 
 
-form{font-size: 16pt;
-    
-    
-    width: auto;
-    
-    
-}
 
-
-#NVI1{display: block;
+#GRAFICA{display: block;
   margin: auto;
-  width: 60%;
+  width: 50%;
   
 }
+
+#bot {
+    margin-top: 10px;
+    background-color: rgb(151, 105, 194);
+    margin-left: 33%
+
+   
+}
+
+#img{
+    width: 100%
+}
+
+  
