@@ -12,7 +12,13 @@ const MainHeader = () => {
                 <li> <a href="">Inicio</a> </li>
                 <li> <a href="">Acerca</a> </li>
                 <li> <a href="">Soporte</a> </li>
-                <li> <a href="">Reseñas</a> </li>
+                <li> 
+                    <a href="">Reseñas</a> 
+                    <ul className="submenu">
+                        <li> <a href="">Usuarios</a> </li>
+                        <li> <a href="">Influencers</a> </li>
+                    </ul>
+                </li>
                 <li> 
                     <a href="">Ranking</a> 
                     <ul className="submenu">
