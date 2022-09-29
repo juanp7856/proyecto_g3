@@ -2,3 +2,19 @@ a {
     color: black;
     text-decoration: none;
 }
+
+.footer-short {
+    color: #c25be9;;
+    width: 120px;
+    height: 15px;
+    margin: 15px 0 20px;
+    background: currentColor;
+}
+
+.footer-top5 {
+    color: #d93e4d;
+    width: 125px;
+    height: 15px;
+    margin: 15px 0 20px;
+    background: currentColor;
+}
