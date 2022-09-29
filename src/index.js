@@ -14,6 +14,7 @@ import Historia12 from './pages/Historia12';
 import reportWebVitals from './reportWebVitals';
 import Historia17 from './pages/Historia17';
 import Historia13 from './pages/Historia13';
+import Historia14 from './pages/Historia14';
 import Historia16 from './pages/Historia16';
 import Historia18 from './pages/Historia18';
 import Historia19 from './pages/Historia19';
@@ -37,6 +38,7 @@ root.render(
         <Route path='/build1' element={ <Historia11/> } />
         <Route path='/custombuild' element={ <Historia12/> } />
         <Route path='/checkout' element={ <Historia13/> } />
+        <Route path='/build2' element={ <Historia14/> } />
         <Route path='/ticket' element={ <Historia15/> } />
         <Route path='/ratingusers' element={ <Historia16/> } />
         <Route path='/ratinginfluencers' element={ <Historia17/> } />
@@ -44,7 +46,7 @@ root.render(
         <Route path='/rankingpcs' element={ <Historia19/> } />
       </Routes>
     </BrowserRouter>
-    <Historia12/>
+    <Historia14/>
   </React.StrictMode>
 );
 
