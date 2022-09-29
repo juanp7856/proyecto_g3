@@ -1,0 +1,17 @@
+.listaimg{
+    height:65px; 
+    width:95px;
+    padding:5px;
+    
+}
+
+.listatext{
+    color: white;
+    padding: 15px;
+}
+
+.listapr{
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
