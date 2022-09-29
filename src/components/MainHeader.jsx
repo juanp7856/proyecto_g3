@@ -12,8 +12,20 @@ const MainHeader = () => {
                 <li> <a href="">Inicio</a> </li>
                 <li> <a href="">Acerca</a> </li>
                 <li> <a href="">Soporte</a> </li>
-                <li> <a href="">Reseñas</a> </li>
-                <li> <a href="">Ranking</a> </li>
+                <li> 
+                    <a href="">Reseñas</a> 
+                    <ul className="submenu">
+                        <li> <a href="">Usuarios</a> </li>
+                        <li> <a href="">Influencers</a> </li>
+                    </ul>
+                </li>
+                <li> 
+                    <a href="">Ranking</a> 
+                    <ul className="submenu">
+                        <li> <a href="">Periféricos</a> </li>
+                        <li> <a href="">Computadoras</a> </li>
+                    </ul>
+                </li>
             </ul>
             <ul class="nav-icons">
                 <li> <button className="btn-header"> <i class="bi bi-search"></i> </button> </li>

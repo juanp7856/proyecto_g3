@@ -61,3 +61,16 @@ nav {
     height:100px;
     width:80px;
 }
+
+.submenu {
+    width: 210px;
+    position: absolute;
+    background-color: rgb(33, 37, 36);
+    padding-left: 0;
+    padding-bottom: 0.5%;
+    display:none;
+}
+
+.nav-links li:hover > .submenu {
+    display: block;
+}
