@@ -8,7 +8,7 @@ const MainHeader = () => {
 
     return <div className="header fs-3 " style={{ paddingBottom: "4%" }}>
         <nav>
-            <ul className="nav-links" style={{ marginLeft: "40%" }}>
+            <ul className="nav-links" style={{ marginLeft: "35%" }}>
                 <li> <a href="">Inicio</a> </li>
                 <li> <a href="">Acerca</a> </li>
                 <li> <a href="">Soporte</a> </li>
