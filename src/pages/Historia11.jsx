@@ -20,19 +20,17 @@ const Historia11 = () => {
     return <div className="bg-dark">
         <Header />
 
-        <div className="container" style={{ textAlign: "center" }}>
-            <div className="mb-5" style={{ width: "50%", float: "left" }}>
-                <h1 className="text-white">¡Tu computadora optimizada!</h1>
+        <div className="container-fluid row" style={{ textAlign: "center" }}>
+            <div className="mb-5 col-6">
+                <h1 className="text-white">¡Arma tu propia PC!</h1>
             </div>
-            <div className="mb-5" style={{ width: "50%", float: "right"}}>
-                <button className="btn btn-light" style={{ width: "125px", marginRight: "15px" }}>ATRÁS</button>
-                <button className="btn btn-success" style={{ width: "125px", marginLeft: "15px" }}>
+            <div className="mb-5 col-6">
+                <button className="btn btn-light" style={{width: "125px", marginRight: "15px"}}>ATRÁS</button>
+                <button className="btn btn-success" style={{width: "125px", marginRight: "15px"}}>
                     <i class="bi bi-cart-fill"></i> CARRITO
                 </button>
             </div>
         </div>
-
-        <div style={{ height:"200px" }}>&nbsp;</div>
 
         <div className="container">
             <div className="row">
