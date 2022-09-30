@@ -18,3 +18,30 @@ a {
     margin: 15px 0 20px;
     background: currentColor;
 }
+
+.background-autor-short {
+    color: #c25be9;
+    position: absolute;
+    font-size: 9em;
+    left: 0;
+    bottom: 140px;
+    line-height: 1;
+    white-space: nowrap;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: .15;
+    font-style: italic;
+}
+
+.background-autor-top {
+    color: #d93e4d;
+    position: absolute;
+    font-size: 8em;
+    left: 0;
+    bottom: 170px;
+    line-height: 1;
+    white-space: nowrap;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: .15;
+    font-style: italic;
+    margin-left: 150px;
+}
