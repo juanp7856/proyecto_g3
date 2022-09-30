@@ -15,10 +15,11 @@ import reportWebVitals from './reportWebVitals';
 import Historia17 from './pages/Historia17';
 import Historia13 from './pages/Historia13';
 import Historia14 from './pages/Historia14';
+import Historia15 from './pages/Historia15';
 import Historia16 from './pages/Historia16';
 import Historia18 from './pages/Historia18';
 import Historia19 from './pages/Historia19';
-import Historia15 from './pages/Historia15';
+
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -46,7 +47,7 @@ root.render(
         <Route path='/rankingpcs' element={ <Historia19/> } />
       </Routes>
     </BrowserRouter>
-    <Historia14/>
+    <Historia15/>
   </React.StrictMode>
 );
 
