@@ -7,12 +7,13 @@ import CPU from "../assets/pc_comps/cpu.png"
 import PLACAMADRE from "../assets/pc_comps/placamadre.png"
 import RAM from "../assets/pc_comps/ram.png"
 import REFLIQUIDA from "../assets/pc_comps/refliquida.png"
-
-
 import WINDOWS from "../assets/pc_comps/windows.png"
+import { useNavigate } from "react-router-dom"
+
 
 
 const historia14 = () => {
+
     return <div className="bg-dark">
         <Header />
         <div className="container">
@@ -21,7 +22,7 @@ const historia14 = () => {
                 <div className="col-1 text-white" >
                     <div class="d-grid gap-2">
                         <button type="button" className="btn btn-light btn-lg" style={{ width: "320px", height: "50px" }}>Order History</button>
-                        <button type="button" className="btn btn-light btn-lg" style={{ width: "320px", height: "50px" }}>Profile Info</button>
+                        <button type="button" className="btn btn-light btn-lg" style={{ width: "320px", height: "50px" }} onClick={()=>{}}>Profile Info</button>
                         <button type="button" className="btn btn-light btn-lg" style={{ width: "320px", height: "50px" }}>Log Out</button>
                     </div>
                 </div>

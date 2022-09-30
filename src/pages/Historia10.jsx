@@ -6,9 +6,7 @@ import { useNavigate } from "react-router-dom"
 
 const Historia10 = () => {
     const navigate = useNavigate();
-    const gamingOnclick = () => {
-        navigate("/build1")
-    }
+
     return <div className="bg-dark">
         <Header />
 
@@ -16,19 +14,18 @@ const Historia10 = () => {
             <div className="mb-5" style={{ width: "50%", float: "left" }}>
                 <h1 className="text-white">¿Qué necesitas?</h1>
             </div>
-            <div className="mb-5" style={{ width: "50%", float: "right" }}>
-                <button className="btn btn-light" style={{ width: "125px", marginRight: "15px" }}>ATRÁS</button>
-                <button className="btn btn-success" style={{ width: "125px", marginLeft: "15px" }}>SIGUIENTE</button>
+            <div className="mb-5" style={{ width: "50%", float: "right"}}>
+                <button className="btn btn-light" style={{ width: "125px", marginRight: "15px" }} onClick={()=>{navigate("/")}}>ATRÁS</button>
+                <button className="btn btn-success" style={{ width: "125px", marginLeft: "15px" }} onClick={()=>{navigate("/build1")}}>SIGUIENTE</button>
             </div>
         </div>
 
-        <div style={{ height: "200px" }}>&nbsp;</div>
+        <div style={{ height:"200px" }}>&nbsp;</div>
 
-        <div className="container" style={{ textAlign: "center" }}>
+        <div className="container" style={{ textAlign: "center" }}> 
             <div className="row mb-5">
                 <div className="col">
-                    <button className="boton btn-success"
-                    onClick={gamingOnclick}>
+                    <button className="boton btn-success">
                         <i class="bi bi-controller"></i>
                         <p>Gaming</p>
                     </button>
@@ -67,7 +64,7 @@ const Historia10 = () => {
                     </button>
                 </div>
             </div>
-        </div>
+            </div>
     </div>
 }
 

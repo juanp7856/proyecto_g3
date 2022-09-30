@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import Historia1 from './pages/Historia1';
 import Historia10 from './pages/Historia10';
 import Historia11 from './pages/Historia11';
-import Historia5 from './pages/Historia5';
-import Historia9 from './pages/Historia9';
 import Historia3 from './pages/Historia3';
 import Historia2 from './pages/Historia2';
 import Historia4 from './pages/Historia4';
@@ -28,18 +26,17 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route path='/' element={ <Historia3 /> } />
         <Route path='/register' element={<Historia1 />} />
         <Route path='/login' element={<Historia2 />} />
-        <Route path='/' element={<Historia3 />} />
         <Route path='/profileInfo' element={<Historia4 />} />
         <Route path='/item' element={<Historia7 />} />
         <Route path='/cart' element={<Historia8 />} />
-        <Route path='/cart2' element={<Historia9 />} />
         <Route path='/prebuiltselect' element={<Historia10 />} />
         <Route path='/build1' element={<Historia11 />} />
         <Route path='/custombuild' element={<Historia12 />} />
         <Route path='/checkout' element={<Historia13 />} />
-        <Route path='/build2' element={<Historia14 />} />
+        <Route path='/orderHistory' element={<Historia14 />} />
         <Route path='/ticket' element={<Historia15 />} />
         <Route path='/ratingusers' element={<Historia16 />} />
         <Route path='/ratinginfluencers' element={<Historia17 />} />

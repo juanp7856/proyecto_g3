@@ -6,6 +6,11 @@
     border-radius: 10%;
     border: 0;
     background-color: slategrey;
+    transition-duration: 0.1s;
+}
+
+.boton:checked {
+    background-color: black;
 }
 
 .boton i {

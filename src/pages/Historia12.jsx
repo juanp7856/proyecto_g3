@@ -5,11 +5,14 @@ import PC from "../assets/pc_recomendada.png"
 import "../styles/H12.css"
 import CPU from "../assets/pc_comps/cpu.png"
 import {graphic, processor, memory, storage, cooling, windows, psupply} from "../modules/components.js"
+import { useNavigate } from "react-router-dom"
 
 let itemsAComprar = []
 
 const Historia12 = () => {
     
+    const navigate = useNavigate();
+
 
     const [itemSelec, setitemSelect] = useState("graphic");
     const [precioComps, setprecioComps] = useState(0);
@@ -49,10 +52,10 @@ const Historia12 = () => {
                 () => {
                     setprecioComps(precioComps + price)
                     agregarCompra(name, price, img)
-                    setSelected(true)
-                    setTimeout(() => {
-                        setSelected(false)
-                    }, 10);
+                    // setSelected(true)
+                    // setTimeout(() => {
+                    //     setSelected(false)
+                    // }, 10);
                 }
             }>+</button>
         </div>
@@ -82,9 +85,6 @@ const Historia12 = () => {
         return <div>
             <div className="bg-gradient tarjetacompra p-3">
                 <img src={img} className="tarjetaimg"/>
-                {/* <div className="col-2">
-                    <img src={PC} className="tarjetaimg"/>
-                </div> */}
                 <div className="tarjetanamecompra">
                     {name}
                 </div>
@@ -97,7 +97,7 @@ const Historia12 = () => {
         
     }
 
-    const listarTarjetasCompra = (selected) => {
+    const listarTarjetasCompra = () => {
         let tarjetas = itemsAComprar.map( (comps) => {
             return crearTarjetaCompra(comps.name, comps.price, comps.img)
         });
@@ -117,7 +117,7 @@ const Historia12 = () => {
                 <h1 className="text-white">¡Arma tu propia PC!</h1>
             </div>
             <div className="mb-5 col-6">
-                <button className="btn btn-light" style={{width: "125px", marginRight: "15px"}}>ATRÁS</button>
+                <button className="btn btn-light" style={{width: "125px", marginRight: "15px"}} onClick={()=>{navigate("/")}}>ATRÁS</button>
                 <button className="btn btn-success" style={{width: "125px", marginRight: "15px"}}>
                     <i class="bi bi-cart-fill"></i> CARRITO
                 </button>
