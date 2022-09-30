@@ -14,10 +14,11 @@ import Historia12 from './pages/Historia12';
 import reportWebVitals from './reportWebVitals';
 import Historia17 from './pages/Historia17';
 import Historia13 from './pages/Historia13';
+import Historia14 from './pages/Historia14';
+import Historia15 from './pages/Historia15';
 import Historia16 from './pages/Historia16';
 import Historia18 from './pages/Historia18';
 import Historia19 from './pages/Historia19';
-import Historia15 from './pages/Historia15';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -26,25 +27,25 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={ <Historia1/> } />
-        <Route path='/login' element={ <Historia2/> } />
-        <Route path='/home' element={ <Historia3/> } />
-        <Route path='/account' element={ <Historia4/> } />
-        <Route path='/item' element={ <Historia7/> } />
-        <Route path='/cart' element={ <Historia8/> } />
-        <Route path='/cart' element={ <Historia9/> } />
-        <Route path='/prebuiltselect' element={ <Historia10/> } />
-        <Route path='/build1' element={ <Historia11/> } />
-        <Route path='/custombuild' element={ <Historia12/> } />
-        <Route path='/checkout' element={ <Historia13/> } />
-        <Route path='/ticket' element={ <Historia15/> } />
-        <Route path='/ratingusers' element={ <Historia16/> } />
-        <Route path='/ratinginfluencers' element={ <Historia17/> } />
-        <Route path='/rankingperipherals' element={ <Historia18/> } />
-        <Route path='/rankingpcs' element={ <Historia19/> } />
+        <Route path='/register' element={<Historia1 />} />
+        <Route path='/login' element={<Historia2 />} />
+        <Route path='/' element={<Historia3 />} />
+        <Route path='/profileInfo' element={<Historia4 />} />
+        <Route path='/item' element={<Historia7 />} />
+        <Route path='/cart' element={<Historia8 />} />
+        <Route path='/cart2' element={<Historia9 />} />
+        <Route path='/prebuiltselect' element={<Historia10 />} />
+        <Route path='/build1' element={<Historia11 />} />
+        <Route path='/custombuild' element={<Historia12 />} />
+        <Route path='/checkout' element={<Historia13 />} />
+        <Route path='/build2' element={<Historia14 />} />
+        <Route path='/ticket' element={<Historia15 />} />
+        <Route path='/ratingusers' element={<Historia16 />} />
+        <Route path='/ratinginfluencers' element={<Historia17 />} />
+        <Route path='/rankingperipherals' element={<Historia18 />} />
+        <Route path='/rankingpcs' element={<Historia19 />} />
       </Routes>
     </BrowserRouter>
-    <Historia12/>
   </React.StrictMode>
 );
 

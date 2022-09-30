@@ -6,7 +6,7 @@ import logo from "../assets/LOGO.png"
 
 const Header = () => {
 
-    return <div className="header fs-3" style={ {paddingBottom : "4%"} }>
+    return <div className="header fs-3 bg-dark" style={ {paddingBottom : "4%"} }>
     <nav>
         <img src={logo} className="logo" />
         <ul className="nav-links">

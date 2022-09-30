@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.css"
 import MainHeader from "../components/MainHeader"
 import logo from "../assets/LOGO.png"
 import Footer from "../components/Footer"
-import "../styles/Footer.css"
+import "../styles/Footer.css" 
 const Historia3 = () => {
-    return <div className=" body bg-dark">
+    return <div className="body bg-dark">
         <MainHeader />
 
         <div style={{ marginLeft: "5%", marginTop: "-3%" }}>
