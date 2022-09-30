@@ -8,7 +8,7 @@ const Header = () => {
 
     return <div className="header fs-3" style={ {paddingBottom : "4%"} }>
     <nav>
-        <img src={logo} class="logo" />
+        <img src={logo} className="logo" />
         <ul className="nav-links">
             <li> <a href="">Inicio</a> </li>
             <li> <a href="">Acerca</a> </li>
@@ -28,7 +28,7 @@ const Header = () => {
                 </ul>
             </li>
         </ul>
-        <ul class="nav-icons">
+        <ul className="nav-icons">
             <li> <button className="btn-header"> <i class="bi bi-search"></i> </button> </li>
             <li> <button className="btn-header"> <i class="bi bi-person-fill"></i> </button> </li>
             <li> <button className="btn-header"> <i class="bi bi-cart-fill"></i> </button> </li>
