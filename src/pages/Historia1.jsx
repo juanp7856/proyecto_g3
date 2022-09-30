@@ -15,6 +15,7 @@ const Historia1 = () => {
 
     const navigate = useNavigate();
 
+    //Acceder a la pagina login
     const createOnClick = () => {
         if (firstname !== "" && lastname !== "" && email !== "" && password !== "") {
             navigate("/login")
