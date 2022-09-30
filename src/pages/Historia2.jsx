@@ -1,8 +1,27 @@
-import React from "react"
+import React, { useState } from "react"
 import Header from "../components/Header"
 import "bootstrap/dist/css/bootstrap.css"
+import { useNavigate } from "react-router-dom"
 
 const Historia2 = () => {
+
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+    const navigate = useNavigate();
+
+    const signUpOnclick = () => {
+        navigate("/register")
+
+    }
+
+    const logInOnclick = () => {
+        if (email !== "" && password !== "") {
+            navigate("/")
+        }
+
+    }
+
     return <div className="bg-dark">
 
         <Header />
@@ -15,22 +34,32 @@ const Historia2 = () => {
 
 
             <div className="mb-3">
-                <input type="text" className="form-control text-white bg-transparent rounded-1 " style={{ padding: "7px" }} placeholder="Email" ></input>
+                <input type="text" className="form-control text-white bg-transparent rounded-1 " style={{ padding: "7px" }} placeholder="Email"
+                    value={email}
+                    onChange={(evt) => setEmail(evt.target.value)}
+                ></input>
             </div>
 
             <div className="mb-3">
-                <input type="password" className=" form-control text-white bg-transparent rounded-1 " style={{ padding: "7px" }} placeholder="Password" ></input>
+                <input type="password" className=" form-control text-white bg-transparent rounded-1 " style={{ padding: "7px" }} placeholder="Password"
+                    value={password}
+                    onChange={(evt) => setPassword(evt.target.value)}
+                ></input>
             </div>
 
             <div className="d-grid gap-2" style={{ paddingBottom: "0px", paddingTop: "10px" }}>
-                <button className="rounded border-0 btn-primary font-monospace h6" style={{ padding: "15px" }} type="button">LOGIN</button>
+                <button className="rounded border-0 btn-primary font-monospace h6" style={{ padding: "15px" }} type="button"
+                    onClick={logInOnclick}
+                >LOGIN</button>
             </div>
 
             <div style={{ paddingBottom: "80px" }}> <a className="font-monospace text-white" href="">Forgot your password?</a></div>
 
             <div className="d-grid gap-2">
-                <div> <a className="font-monospace text-white" href="">Don't have an account?</a></div>
-                <button className="rounded border-0 btn-primary font-monospace h6" style={{ padding: "15px" }} type="button">SIGN UP</button>
+                <div className="font-monospace text-white">Don't have an account?</div>
+                <button className="rounded border-0 btn-primary font-monospace h6" style={{ padding: "15px" }} type="button"
+                    onClick={signUpOnclick}
+                >SIGN UP</button>
             </div>
 
         </form>
