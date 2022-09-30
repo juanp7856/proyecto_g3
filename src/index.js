@@ -19,6 +19,7 @@ import Historia15 from './pages/Historia15';
 import Historia16 from './pages/Historia16';
 import Historia18 from './pages/Historia18';
 import Historia19 from './pages/Historia19';
+import HistoriaExtraFP from './pages/HIstoriaExtraFP';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -44,6 +45,7 @@ root.render(
         <Route path='/ratinginfluencers' element={<Historia17 />} />
         <Route path='/rankingperipherals' element={<Historia18 />} />
         <Route path='/rankingpcs' element={<Historia19 />} />
+        <Route path='/passwordreset' element={<HistoriaExtraFP />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
