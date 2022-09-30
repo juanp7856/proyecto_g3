@@ -12,11 +12,11 @@ const Historia4 = () => {
                     <div class="d-grid gap-2">
                         <button type="button" className="btn btn-light btn-lg" style={{ width: "320px", height: "50px"}}>Order History</button>
                         <button type="button" className="btn btn-light btn-lg" style={{ width: "320px", height: "50px"}}>Profile Info</button>
-                        <button type="button" className="btn btn-light btn-lg" style={{ width: "320px", height: "50px"}}>Log</button>
+                        <button type="button" className="btn btn-light btn-lg" style={{ width: "320px", height: "50px"}}>Log Out</button>
                     </div>
                 </div>
                 <div className="col-8 text-white">
-                    <form className="row g-3 rounded-1 bg-white" style={{ width: "60%", height: "600px" }}>
+                    <form className="row g-3 rounded-1 bg-white" style={{ width: "100%", height: "700px" }}>
                         <div className="row ">HOLA</div>
                         <div className="col-md-6">
                             <label className="form-label text-black">First Name</label>
@@ -66,11 +66,11 @@ const Historia4 = () => {
                             <input type="tel" className="form-control"></input>
                         </div>
 
-                        <div className="col-md-5 text-black">
+                        <div className="col-md-4 text-black">
                             <button type="submit" class="btn btn-primary" style={{ width: "200px", height: "40px" }}>Update Info</button>
                         </div>
 
-                        <div className="col-md-7">
+                        <div className="col-md-4">
                             <button type="button" className="btn btn-light btn-sm">Cancel</button>
                         </div>
 
