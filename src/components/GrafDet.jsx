@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import "../styles/H6.css"
 import GRAFICA from "../assets/pc_comps/grafica.png"
 
-const Grafdet = () => {
+const GrafDet = () => {
     return <div className="bg-dark">
         <Header />
 
@@ -12,18 +12,22 @@ const Grafdet = () => {
 
             <div className="row mb-4" >
 
-                <div className="col" style={{width:"20%"}} >
+                <div className="col" style={{width:"20%",height:"150px"}} >
 
-                    <div id="img" className="bg-light p-2 text-dark bg-opacity-10">
+                    <div className="bg-light p-2 text-dark bg-opacity-10" style={{width:"60%" }}>
 
-                            <img className="listaimg" src={GRAFICA} alt="GRAFICA"/>
+                        <div style={{marginLeft:"10%", width:"50%"}}>
+                            <img  width={250} height={250} src={GRAFICA} alt="GRAFICA" />
+                        </div>
 
 
 
-
-                            <button id="bot" style={{width:"30%"}} type="button" className="both3 btn btn-danger border-0">Agrega al carrito</button>
+                            <button id="bot" style={{marginLeft:"25%", width:"50%"}} type="button" className="both3 btn btn-danger border-0">Agrega al carrito</button>
                     </div>
                 </div>
+
+      
+
 
                 <div className="col" >
 
@@ -60,4 +64,4 @@ const Grafdet = () => {
 
 }
 
-export default Grafdet;
+export default GrafDet;
