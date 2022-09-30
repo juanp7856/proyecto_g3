@@ -46,7 +46,7 @@ root.render(
         <Route path='/rankingpcs' element={ <Historia19/> } />
       </Routes>
     </BrowserRouter>
-    <Historia14/>
+    <Historia1/>
   </React.StrictMode>
 );
 
