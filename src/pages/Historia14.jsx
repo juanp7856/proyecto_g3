@@ -15,10 +15,7 @@ import WINDOWS from "../assets/pc_comps/windows.png"
 const historia14 = () => {
     return <div className="bg-dark">
         <Header />
-        <div style={{ height:"-250px" }}>&nbsp;</div>
-
-        
-            
+        <div style={{ height: "-250px" }}>&nbsp;</div>   
              <div className="container ms-auto" >
                     <div class="d-grid gap-3">
                     <button className="btn bg-white text-left col" style={{ width: "320px", height: "50px" }}>Order History</button>
