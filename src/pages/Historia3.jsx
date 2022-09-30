@@ -3,8 +3,22 @@ import "bootstrap/dist/css/bootstrap.css"
 import MainHeader from "../components/MainHeader"
 import logo from "../assets/LOGO.png"
 import Footer from "../components/Footer"
-import "../styles/Footer.css" 
+import "../styles/Footer.css"
+import { useNavigate } from "react-router-dom"
+
+
 const Historia3 = () => {
+
+    const navigate = useNavigate();
+
+    const customBuildonClick = () => {
+        navigate("/custombuild")
+    }
+
+    const buildforBegginersonClick = () => {
+        navigate("/prebuiltselect")
+    }
+
     return <div className="body bg-dark">
         <MainHeader />
 
@@ -18,8 +32,11 @@ const Historia3 = () => {
                     Just for what you need
                 </div>
                 <div style={{ marginTop: "2%" }}>
-                    <button type="button" className="both3 btn btn-danger border-0">Build for begginers</button>
-                    <button type="button" className="both3 btn btn-danger border-0" style={{ marginLeft: "1%" }}>Advance building</button>
+                    <button type="button" className="both3 btn btn-danger border-0"
+                        onClick={buildforBegginersonClick}>Build for begginers</button>
+                    <button type="button" className="both3 btn btn-danger border-0" style={{ marginLeft: "1%" }}
+                        onClick={customBuildonClick}
+                    >Advance building</button>
                 </div>
             </div>
         </div>
