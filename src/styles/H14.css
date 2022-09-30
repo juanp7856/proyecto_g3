@@ -1,17 +1,24 @@
 .listaimg{
-    height:65px; 
-    width:95px;
+    height:70px; 
+    width:100px;
     padding:5px;
+    
     
 }
 
 .listatext{
-    color: white;
+    color: black;
     padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+   
 }
 
 .listapr{
-    color: white;
+    color: black;
     font-weight: bold;
     padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    
 }
