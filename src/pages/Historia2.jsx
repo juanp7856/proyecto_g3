@@ -53,7 +53,7 @@ const Historia2 = () => {
                 >LOGIN</button>
             </div>
 
-            <div style={{ paddingBottom: "80px" }}> <a className="font-monospace text-white" href="">Forgot your password?</a></div>
+            <div style={{ paddingBottom: "80px" }}> <a className="font-monospace text-white" href="/passwordreset">Forgot your password?</a></div>
 
             <div className="d-grid gap-2">
                 <div className="font-monospace text-white">Don't have an account?</div>
