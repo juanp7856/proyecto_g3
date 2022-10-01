@@ -1,23 +1,14 @@
-.listaimg{
-    height:90px; 
-    width:100px;
-    padding-top: 20px;
-    
-}
-
-.listatext{
+.listatitle{
     color: rgb(0, 0, 0);
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     padding-top: 30px;
     font-size:medium;
 }
-
-.listapr{
+.listatext{
     color: rgb(0, 0, 0);
-    font-weight: bold;
-    text-align: center;
-    padding-top: 40px;
+    text-align: left;
+    padding-top: 30px;
     font-size:medium;
 }
 .container {
@@ -38,4 +29,3 @@
    margin: 0 0 1em 0;
    caption-side: top;
 }
-
