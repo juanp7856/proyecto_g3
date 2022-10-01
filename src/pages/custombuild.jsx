@@ -8,7 +8,7 @@ import {graphic, processor, memory, storage, cooling, windows, psupply} from "..
 import { useNavigate } from "react-router-dom"
 
 let itemsAComprar = []
-let ordenCompra = 0;
+
 
 const Custombuild = () => {
     
@@ -18,7 +18,6 @@ const Custombuild = () => {
 
     const [itemSelec, setitemSelect] = useState("graphic");
     const [precioComps, setprecioComps] = useState(0);
-    const [selected, setSelected] = useState(false);
 
     const alternarSelec = (itemSelec) => {
         if (itemSelec == "graphic") {
@@ -38,7 +37,7 @@ const Custombuild = () => {
         }
     }
 
-    const crearTarjeta = (name,price,img) => {
+    const crearTarjeta = (name,price,img, id) => {
         
         return <div className="bg-white tarjeta">
             <img src={img} className="tarjetaimg"/>
@@ -54,11 +53,7 @@ const Custombuild = () => {
             <button className="btn btn-success tarjetabutton" onClick={
                 () => {
                     setprecioComps(precioComps + price)
-                    agregarCompra(name, price, img)
-                    // setSelected(true)
-                    // setTimeout(() => {
-                    //     setSelected(false)
-                    // }, 10);
+                    agregarCompra(name, price, img, id)
                 }
             }>+</button>
         </div>
@@ -68,7 +63,7 @@ const Custombuild = () => {
         let arrComps = alternarSelec(itemSelec);
 
         let tarjetas = arrComps.map( (comps) => {
-            return crearTarjeta(comps.name, comps.price, comps.img)
+            return crearTarjeta(comps.name, comps.price, comps.img, comps.id)
         });
 
         return tarjetas
@@ -81,10 +76,15 @@ const Custombuild = () => {
         comp.price = price
         comp.img = img
 
+
         itemsAComprar.push(comp)
     }
 
     const guardarOrden = () => {
+        for (let i=0;i<itemsAComprar.length;i++) {
+            itemsAComprar[i].id = `${i}-${itemsAComprar[i].name}-${itemsAComprar[i].price}`
+        }
+
         localStorage.setItem('ordenes',JSON.stringify(itemsAComprar))
     }
 

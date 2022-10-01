@@ -1,18 +1,49 @@
-import React from "react"
+import React, { useState } from "react"
 import Header from "../components/Header"
 import "bootstrap/dist/css/bootstrap.css"
-import PC from "../assets/pc_recomendada.png"
 import "../styles/H8.css"
 
-import CPU from "../assets/pc_comps/cpu.png"
 
-import PLACAMADRE from "../assets/pc_comps/placamadre.png"
-import RAM from "../assets/pc_comps/ram.png"
-import REFLIQUIDA from "../assets/pc_comps/refliquida.png"
-
-import ARMADO from "../assets/armado.png"
+let itemsAComprar = JSON.parse(localStorage.getItem('ordenes') || "[]")
 
 const Checkout = () => {
+
+    const [active,setActive] = useState(false)
+
+    const crearTarjeta = (name, price, img, id) => {
+        return <div className="tarjetaco">
+            <div style={{width:"20%",float: "left"}}>
+                <img className="listaimg" src={img} alt="CPU"/>
+            </div>
+            <div style={{width:"80%", float: "right", marginBottom: "20px"}}>
+                <div style={{width:"50%", float: "left"}}><p className="listatext">{name}</p></div>
+                <div style={{width:"25%", float: "left"}}><p className="listapr">{price}$</p></div>
+                <button type="button" style={{width:"25%", float: "right",fontSize:"40px", backgroundColor: "transparent",border: "none"}} onClick={
+                    ()=>{
+                        for (let x=0;x<itemsAComprar.length;x++) {
+                            if(itemsAComprar[x].id == id) {
+                                itemsAComprar.splice(x,1)
+                                localStorage.setItem('ordenes',JSON.stringify(itemsAComprar))
+                                setActive(true)
+                                setTimeout(()=>{setActive(false)},1);
+                            }
+                        }
+                    }
+                }><i class="bi bi-trash" ></i></button>
+            </div>
+        </div>
+    }
+
+    const listarTarjetas = (active) => {
+
+        let tarjetas = itemsAComprar.map( (comps) => {
+            return crearTarjeta(comps.name, comps.price, comps.img, comps.id)
+        });
+
+        return tarjetas
+    }
+
+
     return <div className="bg-dark">
         <Header />
 
@@ -40,10 +71,6 @@ const Checkout = () => {
           
         </div>
 
-
-
-
-
         <div className="container" style={{ justifyContent: "center" }}>
             <div className="row" style={{ width: "75%", height:"100%"}}>
 
@@ -52,86 +79,7 @@ const Checkout = () => {
                         <div className="row">
 
                             <div className="col mt-2">
-                                <div>
-                                    <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={CPU} alt="CPU"/>
-                                    </div>
-                                    <div style={{width:"80%", float: "right"}}>
-                                        <div style={{width:"50%", float: "left"}}><p className="listatext">INTEL CORE I7-12700F 12-CORE</p></div>
-                                        <div style={{width:"25%", float: "left"}}><p className="listapr">359$</p></div>
-                                        <div style={{width:"25%", float: "right",fontSize:"40px"}}><i class="bi bi-trash" ></i></div>
-                                    </div>
-                                </div>
-
-
-                                <hr style={{color: "black", height:"10px"}}/>
-
-                                <div className="mt-5"  >
-                                    <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={RAM} alt="RAM"/>
-                                    </div>
-                                    <div style={{width:"80%", float: "right"}}>
-                                        <div style={{width:"50%", float: "left"}}><p className="listatext">16GB DDR4 DUAL CHANNEL</p></div>
-                                        <div style={{width:"25%", float: "left"}}><p className="listapr">69$</p></div>
-                                        <div style={{width:"25%", float: "right",fontSize:"40px"}}><i class="bi bi-trash" ></i></div>
-                                    </div>
-                                </div>
-
-
-
-
-                                <hr style={{color: "black", height:"20px"}}/>
-
-                                <div className="mt-5">
-                                    <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={REFLIQUIDA} alt="REF LIQUIDA"/>
-                                    </div>
-                                    <div style={{width:"80%", float: "right"}}>
-                                        <div style={{width:"50%", float: "left"}}><p className="listatext">CORSAIR HIDRO SERIES H100I RGB</p></div>
-                                        <div style={{width:"25%", float: "left"}}><p className="listapr">89$</p></div>
-                                        <div style={{width:"25%", float: "right",fontSize:"40px"}}><i class="bi bi-trash" ></i></div>
-                                    </div>
-                                </div>
-                                
-                                <hr style={{color: "black", height:"20px"}}/>
-
-                                <div className="mt-5">
-                                    <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={PC} alt="CASE"/>
-                                    </div>
-                                    <div style={{width:"80%", float: "right"}}>
-                                        <div style={{width:"50%", float: "left"}}><p className="listatext">NZXT H510</p></div>
-                                        <div style={{width:"25%", float: "left"}}><p className="listapr">99$</p></div>
-                                        <div style={{width:"25%", float: "right",fontSize:"40px"}}><i class="bi bi-trash" ></i></div>
-                                    </div>
-                                </div>
-
-                                <hr style={{color: "black", height:"20px"}}/>
-
-                                <div className="mt-5">
-                                    <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={PLACAMADRE} alt="PLACAMADRE"/>
-                                    </div>
-                                    <div style={{width:"80%", float: "right"}}>
-                                        <div style={{width:"50%", float: "left"}}><p className="listatext">ASUS PRIME B650M-A | INTEL</p></div>
-                                        <div style={{width:"25%", float: "left"}}><p className="listapr">149$</p></div>
-                                        <div style={{width:"25%", float: "right",fontSize:"40px"}}><i class="bi bi-trash" ></i></div>
-                                    </div>
-                                </div>
-
-                                
-                                <hr style={{color: "black", height:"20px"}}/>
-
-                                <div className="mt-5">
-                                    <div style={{width:"20%",float: "left"}}>
-                                        <img className="listaimg" src={ARMADO} alt="ARMADO"/>
-                                    </div>
-                                    <div style={{width:"80%", float: "right"}}>
-                                        <div style={{width:"50%", float: "left"}}><p className="listatext">ARMADO + TESTING + GARANTÍA</p></div>
-                                        <div style={{width:"25%", float: "left"}}><p className="listapr">99$</p></div>
-                                        <div style={{width:"25%", float: "right",fontSize:"40px"}}><i class="bi bi-trash" ></i></div>
-                                    </div>
-                                </div>
+                                {listarTarjetas(active)}
                             </div>
                         </div>
                     </div>

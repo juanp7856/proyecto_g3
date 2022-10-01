@@ -33,7 +33,7 @@ const MainHeader = () => {
             <ul className="nav-icons">
             <li> <button className="btn-header"> <i class="bi bi-search"></i> </button> </li>
             <li> <button className="btn-header" onClick={()=> {navigate("/profileInfo")}}> <i class="bi bi-person-fill"></i> </button> </li>
-            <li> <button className="btn-header" onClick={()=> {navigate("/cart")}}> <i class="bi bi-cart-fill"></i> </button> </li>
+            <li> <button className="btn-header" onClick={()=> {navigate("/checkout")}}> <i class="bi bi-cart-fill"></i> </button> </li>
             </ul>
         </nav>
     </div>

@@ -12,3 +12,9 @@
     font-weight: bold;
 }
 
+.tarjetaco {
+    display: flex;
+    justify-content:space-between;
+    height:70px;
+    align-items: center;
+}
