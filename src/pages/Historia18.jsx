@@ -3,13 +3,14 @@ import Header from "../components/Header"
 import "bootstrap/dist/css/bootstrap.css"
 
 import headset from "../assets/periferics/headset.png"
-import mouseykeyboard from "../assets/periferics/mouseykeyboard.png"
-import standardmouse from "../assets/periferics/standardmouse.png"
-import Xlmousepad from "../assets/periferics/Xlmousepad.png"
+import mouseykeyboard from "../assets/periferics/mouseykeyboards.jpg"
+import standardmouse from "../assets/periferics/standardmousepad.jpg"
+import Xlmousepad from "../assets/periferics/XLmousepad.jpg"
 
 const Historia18 = () => {
     return <div className="bg-dark">
         <Header />
+
         <div className="container, fs-3" style={{ marginLeft : "60px" }}> 
             <div className="text-white" style={{ marginBottom: "30px" }}> Ranking best sellers Periferics</div>
             
