@@ -3,7 +3,7 @@ import Header from "../components/Header"
 import "bootstrap/dist/css/bootstrap.css"
 import { useNavigate } from "react-router-dom"
 
-const Historia4 = () => {
+const ProfileInfo = () => {
 
     const navigate = useNavigate();
 
@@ -98,4 +98,4 @@ const Historia4 = () => {
     </div>
 }
 
-export default Historia4
+export default ProfileInfo

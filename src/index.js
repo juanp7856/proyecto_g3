@@ -1,22 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Historia1 from './pages/Historia1';
-import Historia10 from './pages/Historia10';
-import Historia11 from './pages/Historia11';
-import Historia3 from './pages/Historia3';
-import Historia2 from './pages/Historia2';
-import Historia4 from './pages/Historia4';
+import Register from './pages/register';
+import PrebuildSelect from './pages/prebuiltselect';
+import Prebuilt from './pages/prebuilt';
+import Home from './pages/home';
+import Login from './pages/login';
+import ProfileInfo from './pages/profileinfo';
 import Historia7 from './pages/Historia7';
-import Historia8 from './pages/Historia8';
-import Historia12 from './pages/Historia12';
+import Custombuild from './pages/custombuild';
 import reportWebVitals from './reportWebVitals';
-import Historia17 from './pages/Historia17';
-import Historia13 from './pages/Historia13';
-import Historia14 from './pages/Historia14';
-import Historia15 from './pages/Historia15';
+import Ratinginfluencers from './pages/ratinginfluencers';
+import Checkout from './pages/checkout';
+import Checkoutfinal from './pages/checkoutfinal';
+import OrderHistory from './pages/orderhistory';
+import Support from './pages/support';
 import Historia16 from './pages/Historia16';
 import Historia18 from './pages/Historia18';
-import Historia19 from './pages/Historia19';
+import Rankingpcs from './pages/rankingpcs';
 import HistoriaExtraFP from './pages/HIstoriaExtraFP';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -26,22 +26,22 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={ <Historia3 /> } />
-        <Route path='/register' element={<Historia1 />} />
-        <Route path='/login' element={<Historia2 />} />
-        <Route path='/profileInfo' element={<Historia4 />} />
+        <Route path='/' element={ <Home /> } />
+        <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/profileInfo' element={<ProfileInfo />} />
         <Route path='/item' element={<Historia7 />} />
-        <Route path='/cart' element={<Historia8 />} />
-        <Route path='/prebuiltselect' element={<Historia10 />} />
-        <Route path='/build1' element={<Historia11 />} />
-        <Route path='/custombuild' element={<Historia12 />} />
-        <Route path='/checkout' element={<Historia13 />} />
-        <Route path='/orderHistory' element={<Historia14 />} />
-        <Route path='/ticket' element={<Historia15 />} />
+        <Route path='/prebuiltselect' element={<PrebuildSelect />} />
+        <Route path='/prebuilt' element={<Prebuilt />} />
+        <Route path='/custombuild' element={<Custombuild />} />
+        <Route path='/checkout' element={<Checkout />} />
+        <Route path='/checkoutfinal' element={<Checkoutfinal />} />
+        <Route path='/orderHistory' element={<OrderHistory />} />
+        <Route path='/ticket' element={<Support />} />
         <Route path='/ratingusers' element={<Historia16 />} />
-        <Route path='/ratinginfluencers' element={<Historia17 />} />
+        <Route path='/ratinginfluencers' element={<Ratinginfluencers />} />
         <Route path='/rankingperipherals' element={<Historia18 />} />
-        <Route path='/rankingpcs' element={<Historia19 />} />
+        <Route path='/rankingpcs' element={<Rankingpcs />} />
         <Route path='/passwordreset' element={<HistoriaExtraFP />} />
       </Routes>
     </BrowserRouter>

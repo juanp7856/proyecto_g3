@@ -8,10 +8,12 @@ import {graphic, processor, memory, storage, cooling, windows, psupply} from "..
 import { useNavigate } from "react-router-dom"
 
 let itemsAComprar = []
+let ordenCompra = 0;
 
-const Historia12 = () => {
+const Custombuild = () => {
     
     const navigate = useNavigate();
+    
 
 
     const [itemSelec, setitemSelect] = useState("graphic");
@@ -37,6 +39,7 @@ const Historia12 = () => {
     }
 
     const crearTarjeta = (name,price,img) => {
+        
         return <div className="bg-white tarjeta">
             <img src={img} className="tarjetaimg"/>
             {/* <div className="col-2">
@@ -71,7 +74,7 @@ const Historia12 = () => {
         return tarjetas
     }
 
-    const agregarCompra = (name,price,img) => {
+    const agregarCompra = (name, price, img) => {
         let comp = {}
 
         comp.name = name
@@ -79,6 +82,10 @@ const Historia12 = () => {
         comp.img = img
 
         itemsAComprar.push(comp)
+    }
+
+    const guardarOrden = () => {
+        localStorage.setItem('ordenes',JSON.stringify(itemsAComprar))
     }
 
     const crearTarjetaCompra = (name, price, img) => {
@@ -106,9 +113,6 @@ const Historia12 = () => {
     }
 
 
-
-
-
     return <div className="bg-dark">
         <Header />
 
@@ -118,7 +122,7 @@ const Historia12 = () => {
             </div>
             <div className="mb-5 col-6">
                 <button className="btn btn-light" style={{width: "125px", marginRight: "15px"}} onClick={()=>{navigate("/")}}>ATRÁS</button>
-                <button className="btn btn-success" style={{width: "125px", marginRight: "15px"}}>
+                <button className="btn btn-success" style={{width: "125px", marginRight: "15px"}} onClick={()=>{navigate("/checkout"); guardarOrden()}}>
                     <i class="bi bi-cart-fill"></i> CARRITO
                 </button>
             </div>
@@ -159,10 +163,10 @@ const Historia12 = () => {
             </div>
 
             <div className="col-sm-4">
-                {listarTarjetasCompra(selected)}
+                {listarTarjetasCompra()}
             </div>
         </div>
     </div>
 }
 
-export default Historia12
+export default Custombuild

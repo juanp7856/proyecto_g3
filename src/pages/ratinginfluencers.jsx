@@ -7,7 +7,7 @@ import MrTop5 from "../assets/MrTop5.jpg"
 import ShowCircuit from "../assets/ShortCircuit.jpg"
 import Footer from "../components/Footer"
 
-const Historia17 = () => {
+const Ratinginfluencers = () => {
     return <div className="bg-light">
         <Header />
         
@@ -87,4 +87,4 @@ const Historia17 = () => {
 
 
 
-export default Historia17
+export default Ratinginfluencers

@@ -17,7 +17,7 @@ import WINDOWS from "../assets/pc_comps/windows.png"
 import ARMADO from "../assets/armado.png"
 import { useNavigate } from "react-router-dom"
 
-const Historia11 = () => {
+const Prebuilt = () => {
 
     const navigate = useNavigate();
 
@@ -185,4 +185,4 @@ const Historia11 = () => {
     </div>
 }
 
-export default Historia11
+export default Prebuilt

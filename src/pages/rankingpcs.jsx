@@ -13,7 +13,7 @@ import SSD from "../assets/pc_comps/ssd.png"
 import VENTILADORES from "../assets/pc_comps/ventiladores.png"
 
 
-const Historia19 = () => {
+const Rankingpcs = () => {
     return <div classNameName="bg-dark">
         <Header />
         <div className="container, fs-3" style={{ marginLeft : "60px" }}> 
@@ -211,4 +211,4 @@ const Historia19 = () => {
     </div>
 }
 
-export default Historia19
+export default Rankingpcs

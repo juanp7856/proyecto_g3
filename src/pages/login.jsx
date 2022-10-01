@@ -3,7 +3,7 @@ import Header from "../components/Header"
 import "bootstrap/dist/css/bootstrap.css"
 import { useNavigate } from "react-router-dom"
 
-const Historia2 = () => {
+const Login = () => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -66,4 +66,4 @@ const Historia2 = () => {
     </div>
 }
 
-export default Historia2
+export default Login

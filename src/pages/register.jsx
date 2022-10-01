@@ -7,7 +7,7 @@ import "../styles/H1y2.css"
 import { useNavigate } from "react-router-dom"
 
 
-const Historia1 = () => {
+const Register = () => {
     const [firstname, setFirstName] = useState("")
     const [lastname, setLastName] = useState("")
     const [email, setEmail] = useState("")
@@ -68,4 +68,4 @@ const Historia1 = () => {
 
 }
 
-export default Historia1
+export default Register

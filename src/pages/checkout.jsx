@@ -12,7 +12,7 @@ import REFLIQUIDA from "../assets/pc_comps/refliquida.png"
 
 import ARMADO from "../assets/armado.png"
 
-const Historia8 = () => {
+const Checkout = () => {
     return <div className="bg-dark">
         <Header />
 
@@ -142,4 +142,4 @@ const Historia8 = () => {
 
 }
 
-export default Historia8
+export default Checkout

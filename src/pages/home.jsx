@@ -7,7 +7,7 @@ import "../styles/Footer.css"
 import { useNavigate } from "react-router-dom"
 
 
-const Historia3 = () => {
+const Home = () => {
 
     const navigate = useNavigate();
 
@@ -46,4 +46,4 @@ const Historia3 = () => {
     </div>
 }
 
-export default Historia3
+export default Home

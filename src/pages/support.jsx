@@ -2,7 +2,7 @@ import React from "react"
 import Header from "../components/Header"
 import "bootstrap/dist/css/bootstrap.css"
 
-const Historia15 = () => {
+const Support = () => {
     return <div className="bg-dark">
         <Header />
         <div className="container" style={{ textAlign: "center" }}>
@@ -49,4 +49,4 @@ const Historia15 = () => {
     </div>
 }
 
-export default Historia15
+export default Support

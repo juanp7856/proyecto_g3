@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import "../styles/H10.css"
 import { useNavigate } from "react-router-dom"
 
-const Historia10 = () => {
+const PrebuiltSelect = () => {
     const navigate = useNavigate();
 
     return <div className="bg-dark">
@@ -16,7 +16,7 @@ const Historia10 = () => {
             </div>
             <div className="mb-5" style={{ width: "50%", float: "right"}}>
                 <button className="btn btn-light" style={{ width: "125px", marginRight: "15px" }} onClick={()=>{navigate("/")}}>ATRÁS</button>
-                <button className="btn btn-success" style={{ width: "125px", marginLeft: "15px" }} onClick={()=>{navigate("/build1")}}>SIGUIENTE</button>
+                <button className="btn btn-success" style={{ width: "125px", marginLeft: "15px" }} onClick={()=>{navigate("/prebuilt")}}>SIGUIENTE</button>
             </div>
         </div>
 
@@ -68,4 +68,4 @@ const Historia10 = () => {
     </div>
 }
 
-export default Historia10
+export default PrebuiltSelect

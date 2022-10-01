@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom"
 
 
 
-const historia14 = () => {
+const OrderHistory = () => {
 
     return <div className="bg-dark">
         <Header />
@@ -124,4 +124,4 @@ const historia14 = () => {
         </div>
 }
 
-        export default historia14   
+export default OrderHistory   
