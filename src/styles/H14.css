@@ -1,24 +1,38 @@
 .listaimg{
-    height:70px; 
+    height:90px; 
     width:100px;
-    padding:5px;
-    
+    padding-top: 20px;
     
 }
 
 .listatext{
-    color: black;
-    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
     text-align: center;
-    vertical-align: middle;
-   
+    padding-top: 30px;
+    font-size:medium;
 }
 
 .listapr{
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    padding: 15px;
     text-align: center;
-    vertical-align: middle;
+    padding-top: 40px;
+    font-size:medium;
+}
+.container {
+    text-align: center;
+    padding: 50px;
+    width: 900px;
+    border-collapse: collapse;
     
+    
+}
+.row{
+    width: 88%;
+    background-color: white;
+   text-align: center;
+   border-collapse: collapse;
+   margin: 0 0 1em 0;
+   caption-side: top;
 }
