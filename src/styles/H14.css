@@ -25,6 +25,8 @@
     padding: 50px;
     width: 900px;
     border-collapse: collapse;
+    display: flex;
+  justify-content: space-between;
     
     
 }
@@ -36,3 +38,4 @@
    margin: 0 0 1em 0;
    caption-side: top;
 }
+
