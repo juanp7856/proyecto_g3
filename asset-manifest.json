@@ -1,29 +1,36 @@
 {
   "files": {
-    "main.css": "/proyecto_g3/static/css/main.384bd028.css",
-    "main.js": "/proyecto_g3/static/js/main.9db14693.js",
+    "main.css": "/proyecto_g3/static/css/main.9188024f.css",
+    "main.js": "/proyecto_g3/static/js/main.918bdc6e.js",
     "static/js/787.622adc98.chunk.js": "/proyecto_g3/static/js/787.622adc98.chunk.js",
     "static/media/pc_recomendada.png": "/proyecto_g3/static/media/pc_recomendada.6db8e60d6cac9b9fea58.png",
     "static/media/windows.png": "/proyecto_g3/static/media/windows.8fdd45c685512443838d.png",
     "static/media/ventiladores.png": "/proyecto_g3/static/media/ventiladores.8edf2df9c1f1c7699b57.png",
-    "static/media/placamadre.png": "/proyecto_g3/static/media/placamadre.6c5d5e7f7c9c021c971e.png",
-    "static/media/refliquida.png": "/proyecto_g3/static/media/refliquida.7c3ec467d5b6ad0551f1.png",
-    "static/media/cpu.png": "/proyecto_g3/static/media/cpu.1f8b69b569a3e42d1f1f.png",
+    "static/media/placamadre.png": "/proyecto_g3/static/media/placamadre.2abc6dba98d8e56fe8f7.png",
+    "static/media/refliquida.png": "/proyecto_g3/static/media/refliquida.2acfb22f34d9a759cf80.png",
+    "static/media/cpu.png": "/proyecto_g3/static/media/cpu.d2cb8213730119bce641.png",
+    "static/media/headset.png": "/proyecto_g3/static/media/headset.634aa4b82b719301ce8a.png",
     "static/media/antena.png": "/proyecto_g3/static/media/antena.8b424d6918f5e34dcbee.png",
-    "static/media/ram.png": "/proyecto_g3/static/media/ram.bb5025c9442e99043f8f.png",
+    "static/media/Footer.PNG": "/proyecto_g3/static/media/Footer.e4333800d622b13c96c3.PNG",
+    "static/media/ram.png": "/proyecto_g3/static/media/ram.ffa6ee0c98e9fb3d189f.png",
     "static/media/bootstrap-icons.woff?": "/proyecto_g3/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
     "static/media/ssd.png": "/proyecto_g3/static/media/ssd.6e8cc7979b8b8c0a08ec.png",
     "static/media/bootstrap-icons.woff2?": "/proyecto_g3/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
     "static/media/LOGO.png": "/proyecto_g3/static/media/LOGO.489fa3ea7ac36a6ae26e.png",
+    "static/media/MrTop5.jpg": "/proyecto_g3/static/media/MrTop5.91df2eb820a1e7c7a0ba.jpg",
     "static/media/fuentepoder.png": "/proyecto_g3/static/media/fuentepoder.73d7fc04d863973392c5.png",
     "static/media/armado.png": "/proyecto_g3/static/media/armado.8b13481151643a7cde29.png",
+    "static/media/XLmousepad.jpg": "/proyecto_g3/static/media/XLmousepad.4885aef61fd69127a53e.jpg",
+    "static/media/ShortCircuit.jpg": "/proyecto_g3/static/media/ShortCircuit.58652824846de98cb110.jpg",
+    "static/media/mouseykeyboards.jpg": "/proyecto_g3/static/media/mouseykeyboards.59c98634950edfff088e.jpg",
+    "static/media/standardmousepad.jpg": "/proyecto_g3/static/media/standardmousepad.666d3d2e59f4c1c4cc34.jpg",
     "index.html": "/proyecto_g3/index.html",
-    "main.384bd028.css.map": "/proyecto_g3/static/css/main.384bd028.css.map",
-    "main.9db14693.js.map": "/proyecto_g3/static/js/main.9db14693.js.map",
+    "main.9188024f.css.map": "/proyecto_g3/static/css/main.9188024f.css.map",
+    "main.918bdc6e.js.map": "/proyecto_g3/static/js/main.918bdc6e.js.map",
     "787.622adc98.chunk.js.map": "/proyecto_g3/static/js/787.622adc98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.384bd028.css",
-    "static/js/main.9db14693.js"
+    "static/css/main.9188024f.css",
+    "static/js/main.918bdc6e.js"
   ]
 }
