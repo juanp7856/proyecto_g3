@@ -1,0 +1,31 @@
+.listatitle{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: left;
+    padding-top: 30px;
+    font-size:medium;
+}
+.listatext{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-top: 30px;
+    font-size:medium;
+}
+.container {
+    text-align: center;
+    padding: 50px;
+    width: 900px;
+    border-collapse: collapse;
+    display: flex;
+  justify-content: space-between;
+    
+    
+}
+.row{
+    width: 88%;
+    background-color: white;
+   text-align: center;
+   border-collapse: collapse;
+   margin: 0 0 1em 0;
+   caption-side: top;
+}
