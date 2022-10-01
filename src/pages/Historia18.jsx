@@ -70,7 +70,6 @@ const Historia18 = () => {
 
         </div>
     </div>
-
 }
 
 export default Historia18
