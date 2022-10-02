@@ -36,7 +36,7 @@ const PlacaDet = () => {
                         <h1>ASUS PRIME    <br/>B650M-A | INTEL</h1>
                         <h2><b>149$</b></h2>
 
-                        <h3>Shipping calculated at checkout.</h3>
+                        <h3><span style={{color:"#d1c4e9"}}>Shipping</span> calculated at checkout.</h3>
 
                         <table style={{margintop:"20px"}}>
                             
