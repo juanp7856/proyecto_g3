@@ -3,8 +3,17 @@ import Header from "./Header"
 import "bootstrap/dist/css/bootstrap.css"
 import "../styles/H6.css"
 import RAM from "../assets/pc_comps/ram.png"
+import { useNavigate } from "react-router-dom"
 
 const RamDet = () => {
+
+    
+const navigate = useNavigate();
+
+const customBuildonClick = () => {
+    navigate("../pages/custombuild")
+}
+
     return <div className="bg-dark">
         <Header />
 
@@ -22,7 +31,8 @@ const RamDet = () => {
 
 
 
-                            <button id="bot" style={{marginLeft:"25%", width:"50%"}} type="button" className="both3 btn btn-danger border-0">Agrega al carrito</button>
+                            <button id="button" style={{marginLeft:"25%", width:"50%"}} type="button" 
+                            className="both3 btn btn-danger border-0" onClick={customBuildonClick}>Agrega al carrito</button>
                     </div>
                 </div>
 
@@ -36,7 +46,7 @@ const RamDet = () => {
                         <h1>16GB DDR4   <br/>DUAL CHANNEL</h1>
                         <h2><b>$69</b></h2>
 
-                        <h3><span style={{color:"#d1c4e9"}}>Shipping</span> calculated at checkout.</h3>
+                        <h3><span style={{color:"#d1c4e9"}}>Shipping</span> calculated calculated at checkout.</h3>
 
                         <table style={{margintop:"20px"}}>
                             
