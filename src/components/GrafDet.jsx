@@ -2,9 +2,17 @@ import React from "react"
 import Header from "./Header"
 import "bootstrap/dist/css/bootstrap.css"
 import "../styles/H6.css"
-import GRAFICA from "../assets/pc_comps/grafica.png"
+import CPU from "../assets/pc_comps/grafica.png"
+import { useNavigate } from "react-router-dom"
 
 const GrafDet = () => {
+
+    const navigate = useNavigate();
+
+    const customBuildonClick = () => {
+        navigate("../pages/custombuild")
+    }
+
     return <div className="bg-dark">
         <Header />
 
@@ -17,12 +25,12 @@ const GrafDet = () => {
                     <div className="bg-light p-2 text-dark bg-opacity-10" style={{width:"60%" }}>
 
                         <div style={{marginLeft:"10%", width:"50%"}}>
-                            <img  width={250} height={250} src={GRAFICA} alt="GRAFICA" />
+                            <img  width={250} height={250} src={CPU} alt="CPU" />
                         </div>
 
 
 
-                            <button id="bot" style={{marginLeft:"25%", width:"50%"}} type="button" className="both3 btn btn-danger border-0">Agrega al carrito</button>
+                            <button id="button" style={{marginLeft:"25%", width:"50%"}} type="button" className="both3 btn btn-danger border-0" onClick={customBuildonClick}>Agrega al carrito</button>
                     </div>
                 </div>
 
