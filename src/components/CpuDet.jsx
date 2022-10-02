@@ -3,10 +3,28 @@ import Header from "./Header"
 import "bootstrap/dist/css/bootstrap.css"
 import "../styles/H6.css"
 import CPU from "../assets/pc_comps/cpu.png"
+import { useNavigate } from "react-router-dom"
+
 
 const CpuDet = () => {
+    
+    const navigate = useNavigate();
+
+    const customBuildonClick = () => {
+        navigate("../pages/custombuild")
+    }
+
+   
+
+
+
     return <div className="bg-dark">
         <Header />
+
+        
+   
+
+
 
         <div className="container" style={{margintop:"10%",padding:"50px"}} >
 
@@ -22,7 +40,8 @@ const CpuDet = () => {
 
 
 
-                            <button id="bot" style={{marginLeft:"25%", width:"50%"}} type="button" className="both3 btn btn-danger border-0">Agrega al carrito</button>
+                            <button id="button" style={{marginLeft:"25%", width:"50%"}} type="button" 
+                            className="both3 btn btn-danger border-0" onClick={customBuildonClick}>Agrega al carrito</button>
                     </div>
                 </div>
 
