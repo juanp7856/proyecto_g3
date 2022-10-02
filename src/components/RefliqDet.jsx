@@ -36,7 +36,7 @@ const RefliqDet = () => {
                         <h1>CORSAIR HIDRO SERIES    <br/>H100I RGB</h1>
                         <h2><b>89$</b></h2>
 
-                        <h3>Shipping calculated at checkout.</h3>
+                        <h3><span style={{color:"#d1c4e9"}}>Shipping</span> calculated at checkout.</h3>
 
                         <table style={{margintop:"20px"}}>
                             
