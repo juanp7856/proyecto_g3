@@ -36,7 +36,7 @@ const GrafDet = () => {
                         <h1>NVIDIA GEFORCE <br/>GTX 1650 4 GB</h1>
                         <h2><b>$229</b></h2>
 
-                        <h3>Shipping calculated at checkout.</h3>
+                        <h3><span style={{color:"#d1c4e9"}}>Shipping</span> calculated at checkout.</h3>
 
                         <table style={{margintop:"20px"}}>
                             
